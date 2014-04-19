@@ -64,13 +64,17 @@
 }
 
 .catagory-button {
-	margin-top: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	margin-left: 40px;
 	margin-right: 40px;
-	height: 150px;
-	width: 250px;
+	height: 120px;
+	width: 220px;
 	font-size: 30px;
-	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	font-family: 'Cinzel', sans-serif;
+	vertical-align: middle;
+	line-height: 110px;
 }
 
 #catagories-screen {
@@ -80,6 +84,20 @@
 
 #states-screen {
 	background: url('../img/grain.jpg') no-repeat center center;
+}
+
+#panel1{
+background-color: blue;
+}
+
+#panel2{
+	background-color: red;
+
+}
+
+#panel3{
+	background-color: green;
+
 }
 
 #state-map {
@@ -92,6 +110,8 @@
 	padding-top: 80px;
     margin: 0 auto;
     text-align: center;
+    font-family: 'forum', sans-serif;
+    font-size: 40px;
 }
 
 #form-screen {
@@ -110,4 +130,14 @@
 	width: 230px;
 	text-align: center;
 	font-size: 30px;
+	vertical-align: middle;
+	line-height: 110px;
+}
+
+.form-group {
+	width: 500px;
+}
+
+#long-form {
+	height: 300px;
 }
