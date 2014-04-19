@@ -69,3 +69,14 @@
 	background: url('../img/gavel2.jpg') no-repeat center center;
 
 }
+
+#states-screen {
+	background: lightgrey
+}
+
+#state-map {
+	padding-top: 100px;
+	width: 1000px;
+	   width: 50%;
+    margin: 0 auto;
+}
