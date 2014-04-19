@@ -9,6 +9,7 @@
 		<link href="css/mystyles.css" rel="stylesheet" media="screen" type="text/css">
 		<link href="css/animate.css" rel="stylesheet" media="screen" type="text/css">
 		<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,700,400italic,700italic|Alegreya+Sans:100,300,400,700,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 		  <script type='text/javascript' src='https://www.google.com/jsapi'></script>
 		  <script type='text/javascript'>
 			  google.load('visualization', '1', {'packages': ['geochart', 'corechart', 'motionchart']});
@@ -20,6 +21,7 @@
 			      ['US-TX', 100],
 			      ['US-IA', 100],
 			      ['US-MO', 100],
+			     	['US-FL', 100],
 			      ['US-CO', 100]
 			      ]);
 
@@ -28,15 +30,22 @@
 			        region: 'US',
 			        displayMode: 'regions',
 			        resolution: 'provinces',
-			        backgroundColor: 'lightgrey',
+			        backgroundColor: 'transparent',
+			        legend: 'none',
 			        colorAxis: {colors: ['#e7711c', '#4374e0']} // orange to blue
       			};
 
 			    var chart = new google.visualization.GeoChart(document.getElementById('state-map'));
 			    chart.draw(data, options);
+
+			    google.visualization.events.addListener(chart, 'select', function() {
+				    var selectedItem = chart.getSelection()[0];
+				    if (selectedItem) {
+				      var state = data.getValue(selectedItem.row, 0);
+				      if (state = 'IA') { window.open('form.html')};
+				    }
+			  	});
 			  };
-
-
 	  </script>
 	</head>
 	<body id="states-screen" data-spy="scroll" data-target=".collapse">
@@ -52,6 +61,9 @@
 				</div>
 			</div>
 		</div>
+			<div id='map-title' class='transbox'>
+				<h2> Select Your State</h2>
+			</div>
 		  <div id="state-map" style="width: 900px; height: 500px;"></div>
 	</body>
 </html>

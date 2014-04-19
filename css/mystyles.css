@@ -18,10 +18,16 @@
 	margin-bottom: 0px;
 	height: 800px;
 	color: white;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Forum', sans-serif;
+	font-size: 30px;
 	text-shadow: black 0.1em 0.1em 0.1em;
 	background:transparent;
 }
+
+.jumbotron > h1 {
+	font-family: 'Cinzel', sans-serif;
+}
+
 
 .bg {
 	background: url('../img/scales.jpg') no-repeat center center;
@@ -40,13 +46,14 @@
 	padding-right: 10px;
 	margin-top: 20px;
 	width:100%;
-	font-size: 23px;
+	font-size: 30px;
 	background-color:rgba(120,120,120,0.4);
 	color: white;
+	font-family: 'Forum', sans-serif;
 }
 
 #transbox > ul > li > p{
-	font-size: 23px;
+	font-size: 30px;
 	font-weight: 300;
 }
 
@@ -59,24 +66,48 @@
 .catagory-button {
 	margin-top: 100px;
 	margin-left: 40px;
-		margin-right: 40px;
+	margin-right: 40px;
 	height: 150px;
 	width: 250px;
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
 }
 
 #catagories-screen {
 	background-color: lightgrey;
 	background: url('../img/gavel2.jpg') no-repeat center center;
-
 }
 
 #states-screen {
-	background: lightgrey
+	background: url('../img/grain.jpg') no-repeat center center;
 }
 
 #state-map {
-	padding-top: 100px;
 	width: 1000px;
-	   width: 50%;
+	width: 50%;
     margin: 0 auto;
+}
+
+#map-title {
+	padding-top: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#form-screen {
+	margin-top: 100px;
+	margin-left: 40px;
+}
+
+.info-panel {
+	height:300px;
+}
+
+.start-button {
+	margin-top: 65%;
+	margin-left: 25%;
+	height: 130px;
+	width: 230px;
+	text-align: center;
+	font-size: 30px;
 }
