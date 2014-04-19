@@ -39,7 +39,7 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-top: 20px;
-	width:50%;
+	width:100%;
 	font-size: 23px;
 	background-color:rgba(120,120,120,0.4);
 	color: white;
@@ -54,4 +54,18 @@
 	color: #FF4540;
 	font-weight: 300;
 	font-size: 28px;
+}
+
+.catagory-button {
+	margin-top: 100px;
+	margin-left: 40px;
+		margin-right: 40px;
+	height: 150px;
+	width: 250px;
+}
+
+#catagories-screen {
+	background-color: lightgrey;
+	background: url('../img/gavel2.jpg') no-repeat center center;
+
 }
