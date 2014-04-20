@@ -27,6 +27,7 @@
 .jumbotron > h1 {
 	font-family: 'Cinzel', sans-serif;
 	margin-left: 60px;
+	color: white;
 }
 
 
@@ -87,9 +88,10 @@
 }
 
 #panel1 {
+	margin-top: -70px;
 	background-color: lightgrey;
 	text-align: center;
-	height: 500px;
+	height: 600px;
 }
 
 .circle {
@@ -121,12 +123,14 @@
 
 #panel2{
 	background-color: white;
-
+	text-align: center;
+	height: 600px;
 }
 
 #panel3{
 	background-color: lightgrey;
-
+	text-align: center;
+	height: 600px;
 }
 
 #state-map {
@@ -204,3 +208,9 @@
 	line-height: 70px;
 	font-family: 'Cinzel', sans-serif;
 	}
+
+.red-bar {
+	background-color: #FF6262;
+	height: 60px;
+	width: 100%
+}
