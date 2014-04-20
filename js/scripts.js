@@ -8,6 +8,8 @@ $(window).scroll(function(e){
 	parallax();
 });
 
-$(window).load(function(e){
-	$("#home").height($(window).height()- 10);
-}
+$(".circle").hover(function(){
+	$(this).addClass("animated pulse");
+},function(){
+	$(this).removeClass("animated pulse");
+});

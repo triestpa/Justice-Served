@@ -14,7 +14,7 @@
 		<script type="text/javascript">
 </script>
 	</head>
-	<body data-spy="scroll" data-target=".collapse">
+	<body data-spy="scroll" data-target=".collapse" data-offset='100'>
 		<!-- Navbar -->
 		<div id="nav" class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
@@ -40,7 +40,8 @@
 		<div class="bg"></div>
 		<div id="home" class="jumbotron">
 			<h1>
-				Legal services. Just price.
+				Legal services.<br>
+				Just price.
 			</h1>
 			<div class="row">
 				<div class="col-md-6">
@@ -48,7 +49,7 @@
 						<ul>
 							<li>
 								<p>
-									Guidance provided by law schools and approved by professionals, in a variety of legal fields.
+									Guidance provided by law school students and approved by professionals, in a variety of legal fields.
 								</p>
 							</li>
 							<li>
@@ -79,10 +80,10 @@
 			<div class="panel-heading">
 				How does it work?
 			</div>
-			<div class="row">
+			<div class="row" id="flow-row">
 				<div class="col-md-4">
 					<div class="circle">
-						<h2 class="circle-text" style="padding-top:100px;">
+						<h2 class="circle-text" style="padding-top:110px;">
 							Answer a few questions.
 						</h2>
 					</div>
@@ -96,12 +97,12 @@
 				</div>
 				<div class="col-md-4">
 					<div class="circle">
-						<h2 class="circle-text" style="padding-top:100px;">
-							Get online legal guidance!
+						<h2 class="circle-text" style="padding-top:110px;">
+							Get legal guidance online!
 						</h2>
 					</div>
 				</div>
-			</div>
+			</div><a type="button" class="btn btn-danger panel-button" href="catagories.html">Start Now</a>
 		</div>
 		<div class="info-panel" id="panel2">
 			<div class="red-bar"></div>
@@ -118,20 +119,25 @@
 				<div class="col-md-4">
 					blah blah blah
 				</div>
-			</div>
+			</div><a type="button" class="btn btn-danger panel-button" href="catagories.html">Start Now</a>
 		</div>
 		<div class="info-panel" id="panel3">
 			<div class="red-bar"></div>
 			<div class="panel-heading">
 				About Us
 			</div>
+			<p id="about-text">
+				Justice Served is an online legal guidance center that connects its customers with current law students for quick, preliminary answers to a variety of legal questions. Getting legal guidance can be difficult and expensive for those seeking answers to quick or basic legal questions. Many law students must meet a specific number of hours gaining practical experience in order to graduate or gain course credit, but have difficulty finding the resources to obtain this experience. Offering affordable prices for a variety of packages, Justice Served works to connect its customers to these law students in order to provide legal direction to those who either cannot afford a lawyer&#39;s consultation fees or are not sure their problem is one that needs the time and the money required to meet with a licensed attorney. <br><br> To connect with a law student, you will need to submit a quick form indicating the nature of your question and the time frame in which you need our assistance so that we can put you in touch with the law student most capable of handling your needs. Within one business day you will receive an email asking you to schedule a time to meet with your assigned law student. After setting up your appointment, you will chat with your assigned law student so that they may gather any further information necessary to assist you and, after time to gain approval from their supervisor, the law student will return an answer to you. If the law student assigned to you believes that meeting a lawyer is best for you, Justice Served will refer you to an attorney most suitable to your needs.
+			</p><a type="button" class="btn btn-danger panel-button" href="catagories.html">Start Now</a>
 		</div><script src="js/jquery.js" type="text/javascript">
 </script><script src="js/bootstrap.min.js" type="text/javascript">
 </script><script src="js/scripts.js" type="text/javascript">
 </script><script type="text/javascript">
+/*
 		window.onload = function() {
 			$("#home").height($(window).height()- 110);
 		}
+		*/
 
 		$("#nav ul li a").on('click', function(e) {
 			e.preventDefault();
