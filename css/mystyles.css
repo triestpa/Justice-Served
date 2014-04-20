@@ -209,7 +209,7 @@
 	width: 80%;
     margin: 0 auto;
 	vertical-align: middle;
-	height: 500px;
+	height: 550px;
 	margin-top: 20px;
 	font-size: 25px;
 	background-color:rgba(120,120,120,0.4);
@@ -220,7 +220,7 @@
 #panel3{
 	background-color: lightgrey;
 	text-align: center;
-	height: 900px;
+	height: 1000px;
 }
 
 #state-map {
