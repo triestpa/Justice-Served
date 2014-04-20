@@ -25,13 +25,13 @@
 							<a href="#home">Get Advice</a>
 						</li>
 						<li>
-							<a href="#portfolio">Legal Services</a>
+							<a href="#panel1">How Does It Work?</a>
 						</li>
 						<li>
-							<a href="#portfolio">Legal Services</a>
+							<a href="#panel2">Pricing</a>
 						</li>
 						<li>
-							<a href="#organizations">About Us</a>
+							<a href="#panel3">About Us</a>
 						</li>
 					</ul>
 				</div>
@@ -69,16 +69,79 @@
 						</ul>
 					</div>
 				</div>
-					<div class="col-md-6">
-						<a type="button" class="btn btn-danger start-button" href="catagories.html">Start Now</a>
-					</div>
+				<div class="col-md-6">
+					<a type="button" class="btn btn-danger start-button" href="catagories.html">Start Now</a>
+				</div>
 			</div>
 		</div>
-		<div class="info-panel" id="panel1"></div>
-		<div class="info-panel" id="panel2"></div>
-		<div class="info-panel" id="panel3"></div><script src="js/jquery.js" type="text/javascript">
+		<div class="info-panel" id="panel1">
+			<div class="panel-heading">
+				How does it work?
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="circle">
+						<h2 class="circle-text" style="padding-top:100px;">
+							Answer a few questions.
+						</h2>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="circle">
+						<h2 class="circle-text" style="padding-top:70px;">
+							Receive an appointment confirmation with 24 hours.
+						</h2>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="circle">
+						<h2 class="circle-text" style="padding-top:100px;">
+							Get online legal guidance!
+						</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="info-panel" id="panel2">
+			<div class="panel-heading">
+				Pricing
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					blah blah blah
+				</div>
+				<div class="col-md-4">
+					blah blah blah
+				</div>
+				<div class="col-md-4">
+					blah blah blah
+				</div>
+			</div>
+		</div>
+		<div class="info-panel" id="panel3">
+			<div class="panel-heading">
+				About Us
+			</div>
+		</div>
+		<script src="js/jquery.js" type="text/javascript">
 </script><script src="js/bootstrap.min.js" type="text/javascript">
 </script><script src="js/scripts.js" type="text/javascript">
 </script>
+<script type="text/javascript">
+		window.onload = function() {
+			$("#home").height($(window).height()- 80);
+		}
+
+		$("#nav ul li a").on('click', function(e) {
+			e.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(this.hash).offset().top - 20
+			}, 500, function(){
+			   window.location.hash = hash;
+			});
+
+		});
+		</script>
 	</body>
 </html>

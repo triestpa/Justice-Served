@@ -7,3 +7,7 @@ function parallax(){
 $(window).scroll(function(e){
 	parallax();
 });
+
+$(window).load(function(e){
+	$("#home").height($(window).height()- 10);
+}

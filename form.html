@@ -47,10 +47,10 @@
 				</select>
 			</div>
 		</div>
-		<button class="btn btn-primary btn-lg" id="submit-button" data-toggle="modal" data-target="submission_modal">
+		<button class="btn btn-primary btn-lg" id="submit-button" data-toggle="modal" data-target="submission-modal">
 		  Submit
 		</button>
-		<div class="modal fade" id="submission_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal fade" id="submission-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-dialog">
 		    <div class="modal-content">
 		      <div class="modal-header">
@@ -66,6 +66,15 @@
 		    </div>
 		  </div>
 		</div>
+		<script src="js/jquery.js" type="text/javascript"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				document.getElementById("submission-modal").onclick = function(){
+	  					$('#submission-modal').modal('show');
+	  					return false;
+	  				};
+	  			}
+		</script>
 	</body>
 </html>
