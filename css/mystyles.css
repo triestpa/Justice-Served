@@ -307,3 +307,16 @@
 	width: 100%;
 	background-color: #FF6262; 
 }
+
+#prezi-panel {
+	height: 800px;
+}
+
+#prezi {
+	margin-top: 50px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
