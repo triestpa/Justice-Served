@@ -72,6 +72,7 @@
 				</div>
 				<div class="col-md-6">
 					<a type="button" class="btn btn-danger start-button" href="catagories.html">Start Now</a>
+					<a class="btn btn-danger" id="down-button" href="#panel1">Scroll Down For More Details <span id="down-icon" class="glyphicon glyphicon-arrow-down"></span></a>
 				</div>
 			</div>
 		</div>
@@ -174,23 +175,6 @@
 		</div><script src="js/jquery.js" type="text/javascript">
 </script><script src="js/bootstrap.min.js" type="text/javascript">
 </script><script src="js/scripts.js" type="text/javascript">
-</script><script type="text/javascript">
-/*
-		window.onload = function() {
-			$("#home").height($(window).height()- 110);
-		}
-		*/
-
-		$("#nav ul li a").on('click', function(e) {
-			e.preventDefault();
-			var hash = this.hash;
-			$('html, body').animate({
-				scrollTop: $(this.hash).offset().top - 50
-			}, 500, function(){
-			   window.location.hash = hash;
-			});
-
-		});
-		</script>
+</script>
 	</body>
 </html>
